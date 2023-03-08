@@ -3,11 +3,15 @@ Using the Whisper AI, DeepL, and VoiceVox API's to create a transcribe/translate
 
 Credits to [@sociallyinephtweeb](https://www.youtube.com/@sociallyineptweeb) for the idea.
 
+I will also be using Docker for this as it makes life so much easier.
+
 Docker Hubs for Whisper and VoiceVox:
 
 [VoiceVox](https://hub.docker.com/r/voicevox/voicevox_engine)
 
 [Whisper](https://hub.docker.com/r/onerahmet/openai-whisper-asr-webservice)
+
+If you do not want to use docker; there is in fact client side imports for both of these applications. Make sure to adjust the code accordingly.
 
 # Usage:
 This is where it's different from the video. @sociallyinephtweeb used a similar program for Apex Legends' in-game voice chat. I wanted to generalize the voicechanger to all forms of media.
