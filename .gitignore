@@ -1,3 +1,4 @@
 audio.wav
 output.wav
 __pycache__
+.env

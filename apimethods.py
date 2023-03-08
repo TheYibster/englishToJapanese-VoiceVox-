@@ -3,7 +3,7 @@ import urllib
 import winsound
 import pyaudio
 import wave
-
+from decouple import config
 
 def speak(sentence):
     base_url = 'http://127.0.0.1:50021'
@@ -26,7 +26,7 @@ def speak(sentence):
     winsound.PlaySound(audio_filepath, winsound.SND_FILENAME)
 
 def translate(phrase):
-    auth_key = '46735d9a-e0e5-d8cf-7ce8-a65c9f412e58:fx'
+    auth_key = config('AUTH_KEY')
 
     result = requests.get(
         'https://api-free.deepl.com/v2/translate',
